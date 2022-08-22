@@ -18,7 +18,7 @@ setup(
     name="your",
     version=version,
     packages=find_packages(),
-    url="https://github.com/thepetabyteproject/your",
+    url="https://github.com/rwharton/your",
     author="Devansh Agarwal, Kshitij Aggarwal",
     scripts=glob.glob("bin/*"),
     tests_require=["pytest", "pytest-cov"],
