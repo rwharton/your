@@ -300,12 +300,6 @@ class Writer:
                 task = progress.add_task("[green]Writing...", total=self.nsamp)
             # create the header
             sigproc_object = sigproc_object_from_writer(self)
-    
-            # Make sure telescope_id and machine_id are right!!!
-            if self.your_object.format == 'fil':
-                sigproc_object.telescope_id = self.your_object.telescope_id
-                sigproc_object.machine_id = self.your_object.machine_id
-            else: pass
 
             # write the header
             sigproc_object.write_header(filename=self.outname)
@@ -536,4 +530,3 @@ class Writer:
                 else:
                     self.DM.mark_filled()
         return None
-
