@@ -118,7 +118,8 @@ class Candidate(Your):
                 else:
                     f.attrs[key] = file_header[key]
 
-            f.attrs["tsamp"] = self.your_header.tsamp
+            #f.attrs["tsamp"] = self.your_header.tsamp
+            f.attrs["tsamp"] = self.tsamp
             f.attrs["nchans"] = self.your_header.nchans
             f.attrs["foff"] = self.your_header.foff
             f.attrs["nspectra"] = self.your_header.nspectra

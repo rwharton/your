@@ -65,10 +65,11 @@ def plot_h5(
                 "Lengh of time axis is not 256. This data is probably not pre-processed."
             )
         l = np.linspace(-tlen // 2, tlen // 2, tlen)
-        if width > 1:
-            ts = l * tsamp * width * 1000 / 2
-        else:
-            ts = l * tsamp * 1000
+        #if width > 1:
+        #    ts = l * tsamp * width * 1000 / 2
+        #else:
+        #    ts = l * tsamp * 1000
+        ts = l * tsamp * 1000
 
         if mad_filter:
             freq_time = smad_plotter(freq_time, float(mad_filter))
